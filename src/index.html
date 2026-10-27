@@ -1,29 +1,914 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="w-full h-screen overflow-y-auto flex flex-col justify-start items-center">
-  <!--1. Header section -->
-   <section class="w-full min-h-screen bg-red-400 flex flex-col"></section>
-  <!--2. Header section -->
-   <section class="w-full min-h-screen bg-blue-400 flex flex-col"></section>
-  <!--3. Header section -->
-   <section class="w-full min-h-screen bg-green-400 flex flex-col"></section>
-  <!--4. Header section -->
-   <section class="w-full min-h-screen bg-pink-400 flex flex-col"></section>
-  <!--5. Header section -->
-   <section class="w-full min-h-screen bg-purple-400 flex flex-col"></section>
-  <!--6. Header section -->
-   <section class="w-full min-h-screen bg-gray-400 flex flex-col"></section>
-  <!--7. Header section -->
-   <section class="w-full min-h-screen bg-indigo-400 flex flex-col"></section>
-  <!--8. Header section -->
-   <section class="w-full min-h-screen bg-amber-400 flex flex-col"></section>
 
-  <!-- font-awesome -->
-   <script src="https://kit.fontawesome.com/fb6788d0b7.js" crossorigin="anonymous"></script>
-</body>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Tonmoy Datta's personal portfolio showcasing web development skills, projects, education, and learning journey."
+    />
+
+    <meta name="theme-color" content="#edf6f9" />
+
+    <title>Tonmoy Datta | Aspiring MERN Stack Developer</title>
+
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body
+    class="min-h-screen overflow-x-hidden bg-background font-display text-slate-800 antialiased"
+  >
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="sticky top-0 z-50 border-b border-primary/10 bg-background/95 backdrop-blur-md">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12"
+        aria-label="Main navigation"
+      >
+        <!-- Brand -->
+        <a
+          href="#home"
+          class="shrink-0 text-xl font-extrabold tracking-tight text-primary sm:text-2xl"
+        >
+          Tonmoy<span class="text-secondary">.</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden items-center gap-7 md:flex lg:gap-9">
+          <a href="#home" class="text-sm font-semibold text-primary transition hover:text-secondary">Home</a>
+          <a href="#about" class="text-sm font-medium transition hover:text-primary">About</a>
+          <a href="#skills" class="text-sm font-medium transition hover:text-primary">Skills</a>
+          <a href="#projects" class="text-sm font-medium transition hover:text-primary">Projects</a>
+          <a href="#education" class="text-sm font-medium transition hover:text-primary">Education</a>
+
+          <a
+            href="#contact"
+            class="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-primary/90"
+          >
+            Contact Me <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <details class="relative md:hidden">
+          <summary
+            aria-label="Toggle navigation menu"
+            class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-xl border border-primary/15 text-primary transition hover:bg-secondary/20 [&::-webkit-details-marker]:hidden"
+          >
+            <i class="fa-solid fa-bars text-xl"></i>
+          </summary>
+
+          <div
+            class="absolute right-0 top-14 w-56 rounded-2xl border border-primary/10 bg-white p-3 shadow-xl"
+          >
+            <a href="#home" class="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-background hover:text-primary">Home</a>
+            <a href="#about" class="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-background hover:text-primary">About</a>
+            <a href="#skills" class="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-background hover:text-primary">Skills</a>
+            <a href="#projects" class="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-background hover:text-primary">Projects</a>
+            <a href="#education" class="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-background hover:text-primary">Education</a>
+            <a href="#contact" class="mt-2 block rounded-lg bg-primary px-4 py-3 text-center text-sm font-semibold text-white">Contact Me</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==================== HERO SECTION ==================== -->
+      <section
+        id="home"
+        class="relative scroll-mt-24 overflow-hidden"
+      >
+        <!-- Decorative Background -->
+        <div class="pointer-events-none absolute -right-24 -top-20 h-72 w-72 rounded-full bg-secondary/30 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
+
+        <div
+          class="relative mx-auto grid min-h-[calc(100svh-73px)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-12"
+        >
+          <!-- Introduction -->
+          <div class="order-2 lg:order-1">
+            <div
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/80 px-4 py-2 text-sm font-medium text-primary shadow-sm"
+            >
+              <span class="h-2 w-2 animate-pulse rounded-full bg-secondary"></span>
+              Aspiring MERN Stack Developer
+            </div>
+
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-primary/70">
+              Hello, I'm
+            </p>
+
+            <h1 class="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl md:text-6xl xl:text-7xl">
+              Tonmoy Datta
+              <span class="mt-2 block text-primary">Building for the web.</span>
+            </h1>
+
+            <p class="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
+              I'm a Computer Science and Engineering student passionate about
+              web development. I'm learning to build responsive, user-friendly
+              websites and practical applications while growing toward my goal
+              of becoming a full-stack MERN developer.
+            </p>
+
+            <!-- Hero Buttons -->
+            <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-3.5 font-semibold text-white shadow-lg shadow-primary/20 transition hover:-translate-y-1 hover:bg-primary/90"
+              >
+                Explore My Projects
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center gap-3 rounded-full border border-primary/20 bg-white px-7 py-3.5 font-semibold text-primary transition hover:-translate-y-1 hover:bg-secondary/20"
+              >
+                Get In Touch
+                <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-10 flex flex-wrap items-center gap-5">
+              <span class="text-sm font-medium text-slate-500">Find me on</span>
+
+              <a
+                href="https://github.com/tonmoyofcl01-web"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-primary/10 bg-white text-xl text-primary transition hover:-translate-y-1 hover:bg-primary hover:text-white"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/tonmoy-datta-topu-78b674436/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-primary/10 bg-white text-xl text-primary transition hover:-translate-y-1 hover:bg-primary hover:text-white"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="order-1 flex justify-center lg:order-2 lg:justify-end">
+            <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
+              <!-- Decorative Shapes -->
+              <div class="absolute -right-2 top-8 h-24 w-24 rounded-3xl bg-secondary/70 sm:-right-5 sm:h-32 sm:w-32"></div>
+              <div class="absolute -bottom-3 -left-3 h-28 w-28 rounded-3xl border-2 border-primary/20 sm:-bottom-5 sm:-left-5 sm:h-36 sm:w-36"></div>
+
+              <!-- Image Container -->
+              <div class="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] border-8 border-white bg-secondary/30 shadow-2xl shadow-primary/10 sm:rounded-[2.5rem]">
+                <img
+                  src="./assets/profile.png"
+                  alt="Portrait of Tonmoy Datta"
+                  class="h-full w-full object-cover object-center"
+                  fetchpriority="high"
+                />
+              </div>
+
+              <!-- Floating Card -->
+              <div class="absolute -bottom-5 right-2 rounded-2xl border border-primary/10 bg-white p-4 shadow-xl sm:-right-6 sm:p-5">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-secondary/30 text-xl text-primary">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-slate-900">Always Learning</p>
+                    <p class="mt-1 text-xs text-slate-500">One project at a time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT SECTION ==================== -->
+      <section id="about" class="scroll-mt-20 bg-white py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <!-- About Visual -->
+            <div class="relative mx-auto w-full max-w-lg">
+              <div class="rounded-[2rem] bg-background p-6 sm:p-10">
+                <div class="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm sm:p-8">
+                  <div class="mb-7 flex items-center gap-3">
+                    <span class="h-3 w-3 rounded-full bg-primary"></span>
+                    <span class="h-3 w-3 rounded-full bg-secondary"></span>
+                    <span class="h-3 w-3 rounded-full bg-slate-200"></span>
+                    <span class="ml-auto text-xs font-medium text-slate-400">about-me.html</span>
+                  </div>
+
+                  <div class="space-y-4 font-mono text-sm sm:text-base">
+                    <p class="text-slate-400">&lt;developer&gt;</p>
+                    <p class="pl-4 text-primary">Name: "Tonmoy Datta"</p>
+                    <p class="pl-4 text-primary">Field: "Web Development"</p>
+                    <p class="pl-4 text-primary">Focus: "MERN Stack"</p>
+                    <p class="pl-4 text-primary">Mindset: "Keep Learning"</p>
+                    <p class="text-slate-400">&lt;/developer&gt;</p>
+                  </div>
+
+                  <div class="mt-8 h-1.5 overflow-hidden rounded-full bg-background">
+                    <div class="h-full w-2/3 rounded-full bg-primary"></div>
+                  </div>
+                  <p class="mt-3 text-xs text-slate-500">My journey is in progress...</p>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-4 -right-2 rounded-2xl bg-primary px-5 py-4 text-white shadow-xl sm:-right-5">
+                <i class="fa-solid fa-graduation-cap mr-2"></i>
+                CSE Undergraduate
+              </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="pt-5 lg:pt-0">
+              <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+                About Me
+              </p>
+
+              <h2 class="mt-4 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
+                Learning today,
+                <span class="text-primary">building tomorrow.</span>
+              </h2>
+
+              <p class="mt-6 leading-8 text-slate-600">
+                I'm Tonmoy Datta, a Computer Science and Engineering
+                undergraduate at Patuakhali Science and Technology University.
+                My interest in programming has led me to explore the world of
+                web development, where I enjoy turning ideas into functional
+                and visually appealing websites.
+              </p>
+
+              <p class="mt-4 leading-8 text-slate-600">
+                I'm currently strengthening my foundation in HTML, CSS,
+                Tailwind CSS, JavaScript, and React while progressing toward
+                backend development with Node.js, Express.js, and MongoDB.
+                I believe consistent practice and building real projects are
+                essential to becoming a better developer.
+              </p>
+
+              <p class="mt-4 leading-8 text-slate-600">
+                My goal is to become a skilled full-stack developer, contribute
+                to meaningful projects, and continue learning through
+                practical experience.
+              </p>
+
+              <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="flex items-start gap-3 rounded-xl bg-background p-4">
+                  <i class="fa-solid fa-laptop-code mt-1 text-xl text-primary"></i>
+                  <div>
+                    <h3 class="font-bold text-slate-900">Practical Learning</h3>
+                    <p class="mt-1 text-sm leading-6 text-slate-500">
+                      Improving through hands-on projects.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-background p-4">
+                  <i class="fa-solid fa-bullseye mt-1 text-xl text-primary"></i>
+                  <div>
+                    <h3 class="font-bold text-slate-900">Career Goal</h3>
+                    <p class="mt-1 text-sm leading-6 text-slate-500">
+                      Becoming a full-stack MERN developer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#education"
+                class="mt-8 inline-flex items-center gap-2 font-bold text-primary transition hover:gap-4"
+              >
+                Explore My Education
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SKILLS SECTION ==================== -->
+      <section id="skills" class="scroll-mt-20 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              My Skills
+            </p>
+            <h2 class="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Tools I use to build
+            </h2>
+            <p class="mt-5 leading-7 text-slate-600">
+              Technologies I'm learning and practicing as I develop my web
+              development skills.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+            <!-- Skill 1 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-2xl text-orange-500 transition group-hover:bg-orange-500 group-hover:text-white">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">HTML5</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Semantic page structure</p>
+            </article>
+
+            <!-- Skill 2 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-2xl text-blue-500 transition group-hover:bg-blue-500 group-hover:text-white">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">CSS3</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Styling and layouts</p>
+            </article>
+
+            <!-- Skill 3 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-50 text-2xl text-cyan-600 transition group-hover:bg-cyan-600 group-hover:text-white">
+                <i class="fa-solid fa-wind"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">Tailwind CSS</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Responsive UI design</p>
+            </article>
+
+            <!-- Skill 4 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-50 text-2xl text-yellow-500 transition group-hover:bg-yellow-500 group-hover:text-white">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">JavaScript</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Programming fundamentals</p>
+            </article>
+
+            <!-- Skill 5 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-50 text-2xl text-sky-500 transition group-hover:bg-sky-500 group-hover:text-white">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">React</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Component-based UI</p>
+            </article>
+
+            <!-- Skill 6 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 text-2xl text-green-600 transition group-hover:bg-green-600 group-hover:text-white">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">Node.js</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Backend development</p>
+            </article>
+
+            <!-- Skill 7 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-2xl text-emerald-600 transition group-hover:bg-emerald-600 group-hover:text-white">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">Express.js</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Server and API basics</p>
+            </article>
+
+            <!-- Skill 8 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 text-2xl text-green-600 transition group-hover:bg-green-600 group-hover:text-white">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">MongoDB</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">NoSQL database basics</p>
+            </article>
+
+            <!-- Skill 9 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-2xl text-slate-800 transition group-hover:bg-slate-800 group-hover:text-white">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">Git</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Version control basics</p>
+            </article>
+
+            <!-- Skill 10 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-2xl text-slate-800 transition group-hover:bg-slate-800 group-hover:text-white">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">GitHub</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Repositories and collaboration</p>
+            </article>
+
+            <!-- Skill 11 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-50 text-2xl text-violet-600 transition group-hover:bg-violet-600 group-hover:text-white">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">Responsive Design</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Mobile-friendly interfaces</p>
+            </article>
+
+            <!-- Skill 12 -->
+            <article class="group rounded-2xl border border-primary/10 bg-white p-5 transition duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-2xl text-amber-600 transition group-hover:bg-amber-600 group-hover:text-white">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <h3 class="mt-5 font-bold text-slate-900">VS Code</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Development environment</p>
+            </article>
+          </div>
+
+          <p class="mt-7 text-center text-sm text-slate-500">
+            I am actively developing my skills through coursework and personal projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==================== PROJECTS SECTION ==================== -->
+      <section id="projects" class="scroll-mt-20 bg-white py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+                My Projects
+              </p>
+              <h2 class="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+                Things I've built
+              </h2>
+              <p class="mt-4 max-w-xl leading-7 text-slate-600">
+                A few projects from my learning journey, where I practice
+                writing code and solving problems.
+              </p>
+            </div>
+
+            <a
+              href="https://github.com/tonmoyofcl01-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex w-fit items-center gap-2 font-bold text-primary transition hover:gap-4"
+            >
+              View GitHub Profile
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Project 1: Epixelab -->
+            <article class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-background transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
+              <div class="relative aspect-[16/10] overflow-hidden bg-secondary/20">
+                <img
+                  src="./assets/epixelab.png"
+                  alt="Epixelab web project screenshot"
+                  loading="lazy"
+                  class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-primary shadow-sm">
+                  Project 01
+                </span>
+              </div>
+
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-xl font-extrabold text-slate-900">Epixelab</h3>
+
+                <p class="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                  A web design assignment focused on building a structured
+                  interface and practicing HTML, CSS, and responsive layout
+                  techniques.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">HTML</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">CSS</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">Web Design</span>
+                </div>
+
+                <div class="mt-7 border-t border-primary/10 pt-5">
+                  <a
+                    href="https://github.com/tonmoyofcl01-web/module3-assignment"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 font-bold text-primary transition hover:gap-3"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                    Source Code
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Chessboard -->
+            <article class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-background transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
+              <div class="relative aspect-[16/10] overflow-hidden bg-secondary/20">
+                <img
+                  src="./assets/chessboard.png"
+                  alt="Chessboard created with CSS Flexbox"
+                  loading="lazy"
+                  class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-primary shadow-sm">
+                  Project 02
+                </span>
+              </div>
+
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-xl font-extrabold text-slate-900">CSS Chessboard</h3>
+
+                <p class="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                  A chessboard interface built using raw CSS and Flexbox to
+                  practice layout control, alignment, and alternating square
+                  colors.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">HTML</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">CSS</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">Flexbox</span>
+                </div>
+
+                <div class="mt-7 border-t border-primary/10 pt-5">
+                  <a
+                    href="https://github.com/tonmoyofcl01-web/chessboard-with-raw-css-flexbox"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 font-bold text-primary transition hover:gap-3"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                    Source Code
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Learning Tracker -->
+            <article class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-background transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 md:col-span-2 lg:col-span-1">
+              <div class="relative aspect-[16/10] overflow-hidden bg-secondary/20">
+                <img
+                  src="./assets/learning-tracker.png"
+                  alt="Learning Tracker project screenshot"
+                  loading="lazy"
+                  class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-primary shadow-sm">
+                  Project 03
+                </span>
+              </div>
+
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-xl font-extrabold text-slate-900">Learning Tracker</h3>
+
+                <p class="mt-3 flex-1 text-sm leading-7 text-slate-600">
+                  A personal learning project designed to practice organizing
+                  learning progress and building a useful web interface.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">HTML</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">CSS</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">JavaScript</span>
+                </div>
+
+                <div class="mt-7 border-t border-primary/10 pt-5">
+                  <a
+                    href="https://github.com/tonmoyofcl01-web/learning-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 font-bold text-primary transition hover:gap-3"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                    Source Code
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-12 rounded-2xl border border-primary/10 bg-background p-6 text-center sm:p-8">
+            <p class="font-semibold text-slate-800">
+              More projects and improvements are on the way.
+            </p>
+            <p class="mt-2 text-sm leading-6 text-slate-500">
+              I'm continuing to practice and expand my portfolio as I learn new technologies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EDUCATION SECTION ==================== -->
+      <section id="education" class="scroll-mt-20 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              Education
+            </p>
+            <h2 class="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              My academic journey
+            </h2>
+            <p class="mt-4 leading-7 text-slate-600">
+              Building a foundation in computer science while developing
+              practical web development skills.
+            </p>
+          </div>
+
+          <div class="mx-auto mt-12 max-w-3xl">
+            <div class="relative space-y-8 before:absolute before:bottom-8 before:left-[19px] before:top-8 before:w-px before:bg-primary/20 sm:before:left-[23px]">
+              <!-- University -->
+              <article class="relative pl-12 sm:pl-16">
+                <div class="absolute left-0 top-1 flex h-10 w-10 items-center justify-center rounded-full border-4 border-background bg-primary text-white sm:h-12 sm:w-12">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm transition hover:shadow-lg sm:p-8">
+                  <span class="inline-block rounded-full bg-secondary/25 px-3 py-1 text-xs font-bold text-primary">
+                    Currently Studying
+                  </span>
+
+                  <h3 class="mt-4 text-lg font-extrabold text-slate-900 sm:text-xl">
+                    Bachelor of Science in Computer Science and Engineering
+                  </h3>
+
+                  <p class="mt-2 font-semibold text-primary">
+                    Patuakhali Science and Technology University
+                  </p>
+
+                  <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Pursuing an undergraduate degree while learning programming,
+                    software development, and modern web technologies.
+                  </p>
+                </div>
+              </article>
+
+              <!-- HSC -->
+              <article class="relative pl-12 sm:pl-16">
+                <div class="absolute left-0 top-1 flex h-10 w-10 items-center justify-center rounded-full border-4 border-background bg-secondary text-primary sm:h-12 sm:w-12">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm transition hover:shadow-lg sm:p-8">
+                  <span class="inline-block rounded-full bg-secondary/25 px-3 py-1 text-xs font-bold text-primary">
+                    Completed
+                  </span>
+
+                  <h3 class="mt-4 text-lg font-extrabold text-slate-900 sm:text-xl">
+                    Higher Secondary Certificate (HSC)
+                  </h3>
+
+                  <p class="mt-2 font-semibold text-primary">
+                    Notre Dame College, Dhaka
+                  </p>
+
+                  <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Completed higher secondary education with a GPA of 5.00.
+                  </p>
+                </div>
+              </article>
+
+              <!-- SSC -->
+              <article class="relative pl-12 sm:pl-16">
+                <div class="absolute left-0 top-1 flex h-10 w-10 items-center justify-center rounded-full border-4 border-background bg-secondary text-primary sm:h-12 sm:w-12">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+
+                <div class="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm transition hover:shadow-lg sm:p-8">
+                  <span class="inline-block rounded-full bg-secondary/25 px-3 py-1 text-xs font-bold text-primary">
+                    Completed
+                  </span>
+
+                  <h3 class="mt-4 text-lg font-extrabold text-slate-900 sm:text-xl">
+                    Secondary School Certificate (SSC)
+                  </h3>
+
+                  <p class="mt-2 font-semibold text-primary">
+                    Banani Bidyaniketan School and College
+                  </p>
+
+                  <p class="mt-3 text-sm leading-7 text-slate-600">
+                    Completed secondary education with a GPA of 5.00.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT SECTION ==================== -->
+      <section id="contact" class="scroll-mt-20 bg-white py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+              Get In Touch
+            </p>
+            <h2 class="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Let's connect
+            </h2>
+            <p class="mt-4 leading-7 text-slate-600">
+              Have a project idea, feedback, or an opportunity to discuss?
+              I'd be happy to connect.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-8 lg:grid-cols-5 lg:gap-12">
+            <!-- Contact Information -->
+            <div class="rounded-3xl bg-primary p-7 text-white sm:p-9 lg:col-span-2">
+              <h3 class="text-2xl font-extrabold">Contact Information</h3>
+
+              <p class="mt-4 leading-7 text-white/75">
+                Feel free to reach out through my professional profiles.
+              </p>
+
+              <div class="mt-9 space-y-6">
+                <a
+                  href="https://github.com/tonmoyofcl01-web"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-4 rounded-xl border border-white/15 p-4 transition hover:bg-white/10"
+                >
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/10 text-xl">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                  <span class="min-w-0">
+                    <span class="block text-sm text-white/60">GitHub</span>
+                    <span class="mt-1 block break-all font-semibold">tonmoyofcl01-web</span>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/tonmoy-datta-topu-78b674436/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-4 rounded-xl border border-white/15 p-4 transition hover:bg-white/10"
+                >
+                  <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/10 text-xl">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </span>
+                  <span class="min-w-0">
+                    <span class="block text-sm text-white/60">LinkedIn</span>
+                    <span class="mt-1 block break-all font-semibold">Tonmoy Datta</span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mt-9 border-t border-white/20 pt-6">
+                <p class="text-sm leading-7 text-white/75">
+                  Open to learning opportunities, collaboration, and connecting
+                  with fellow developers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="rounded-3xl border border-primary/10 bg-background p-6 sm:p-9 lg:col-span-3">
+              <h3 class="text-xl font-extrabold text-slate-900">
+                Send Me a Message
+              </h3>
+              <p class="mt-2 text-sm leading-6 text-slate-500">
+                Fill in the fields below to prepare your message.
+              </p>
+
+              <!--
+                Frontend-only form.
+                Connect a backend or form service to receive submissions.
+              -->
+              <form
+                action="mailto:YOUR_EMAIL@example.com"
+                method="post"
+                enctype="text/plain"
+                class="mt-7 space-y-5"
+              >
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-semibold text-slate-700">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                    class="w-full rounded-xl border border-primary/15 bg-white px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10"
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-semibold text-slate-700">
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                    class="w-full rounded-xl border border-primary/15 bg-white px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10"
+                  />
+                </div>
+
+                <div>
+                  <label for="message" class="mb-2 block text-sm font-semibold text-slate-700">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="Message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                    class="w-full resize-y rounded-xl border border-primary/15 bg-white px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-primary/10"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="inline-flex w-full items-center justify-center gap-3 rounded-xl bg-primary px-6 py-4 font-bold text-white transition hover:bg-primary/90 sm:w-auto"
+                >
+                  Send Message
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <p class="text-xs leading-5 text-slate-500">
+                  This form uses your email application. Replace the placeholder
+                  email address with your real email before publishing.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 text-white">
+      <div class="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-12">
+        <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <!-- Footer Brand -->
+          <div>
+            <a href="#home" class="text-2xl font-extrabold tracking-tight">
+              Tonmoy<span class="text-secondary">.</span>
+            </a>
+            <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">
+              Aspiring MERN Stack Developer, continuously learning and building
+              for the web.
+            </p>
+          </div>
+
+          <!-- Footer Navigation -->
+          <nav aria-label="Footer navigation" class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
+            <a href="#home" class="transition hover:text-secondary">Home</a>
+            <a href="#about" class="transition hover:text-secondary">About</a>
+            <a href="#skills" class="transition hover:text-secondary">Skills</a>
+            <a href="#projects" class="transition hover:text-secondary">Projects</a>
+            <a href="#education" class="transition hover:text-secondary">Education</a>
+            <a href="#contact" class="transition hover:text-secondary">Contact</a>
+          </nav>
+
+          <!-- Footer Social Links -->
+          <div class="flex gap-3">
+            <a
+              href="https://github.com/tonmoyofcl01-web"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-lg text-slate-300 transition hover:border-secondary hover:bg-secondary hover:text-slate-950"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/tonmoy-datta-topu-78b674436/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-lg text-slate-300 transition hover:border-secondary hover:bg-secondary hover:text-slate-950"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-9 border-t border-white/10 pt-6 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+          <p class="text-sm text-slate-400">
+            &copy; 2026 Tonmoy Datta. All rights reserved.
+          </p>
+          <a href="#home" class="mt-4 inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-secondary sm:mt-0">
+            Back to top
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

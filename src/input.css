@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme{
-    --font-display: "Oswald", sans-serif;
+    --font-display: "Manrope", sans-serif;
     --color-background: #edf6f9;
     --color-primary: #006d77;
     --color-secondary: #83c5be;
