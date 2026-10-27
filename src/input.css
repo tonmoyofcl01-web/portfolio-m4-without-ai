@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-display: "Oswald", sans-serif;
+    --color-background: #edf6f9;
+    --color-primary: #006d77;
+    --color-secondary: #83c5be;
+}
